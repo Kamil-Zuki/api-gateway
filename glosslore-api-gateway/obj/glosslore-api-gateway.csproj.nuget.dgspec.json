@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\karat\\Desktop\\LangProgects\\glosslore-api-gateway\\glosslore-api-gateway\\glosslore-api-gateway.csproj": {}
+    "C:\\Users\\karat\\Desktop\\LangProgects\\glosslore-api-gateway\\glosslore-api-gateway\\Glosslore-api-gateway.csproj": {}
   },
   "projects": {
-    "C:\\Users\\karat\\Desktop\\LangProgects\\glosslore-api-gateway\\glosslore-api-gateway\\glosslore-api-gateway.csproj": {
+    "C:\\Users\\karat\\Desktop\\LangProgects\\glosslore-api-gateway\\glosslore-api-gateway\\Glosslore-api-gateway.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\karat\\Desktop\\LangProgects\\glosslore-api-gateway\\glosslore-api-gateway\\glosslore-api-gateway.csproj",
-        "projectName": "glosslore-api-gateway",
-        "projectPath": "C:\\Users\\karat\\Desktop\\LangProgects\\glosslore-api-gateway\\glosslore-api-gateway\\glosslore-api-gateway.csproj",
+        "projectUniqueName": "C:\\Users\\karat\\Desktop\\LangProgects\\glosslore-api-gateway\\glosslore-api-gateway\\Glosslore-api-gateway.csproj",
+        "projectName": "Glosslore-api-gateway",
+        "projectPath": "C:\\Users\\karat\\Desktop\\LangProgects\\glosslore-api-gateway\\glosslore-api-gateway\\Glosslore-api-gateway.csproj",
         "packagesPath": "C:\\Users\\karat\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\karat\\Desktop\\LangProgects\\glosslore-api-gateway\\glosslore-api-gateway\\obj\\",
         "projectStyle": "PackageReference",
@@ -39,6 +39,20 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Ocelot": {
+              "target": "Package",
+              "version": "[18.0.0, )"
+            },
+            "Swagger": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.4.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

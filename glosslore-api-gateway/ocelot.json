@@ -1,0 +1,16 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/v1/parser/parse-by-html",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5208
+        }
+      ],
+      "UpstreamPathTemplate": "/parse-by-html",
+      "UpstreamHttpMethod": [ "GET" ]
+    }
+  ]
+}
