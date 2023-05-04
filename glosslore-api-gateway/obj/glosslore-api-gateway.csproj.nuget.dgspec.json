@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\karat\\Desktop\\LangProgects\\glosslore-api-gateway\\glosslore-api-gateway\\Glosslore-api-gateway.csproj": {}
+    "C:\\Users\\karat\\Desktop\\LangProgects\\glosslore-api-gateway\\glosslore-api-gateway\\glosslore-api-gateway.csproj": {}
   },
   "projects": {
-    "C:\\Users\\karat\\Desktop\\LangProgects\\glosslore-api-gateway\\glosslore-api-gateway\\Glosslore-api-gateway.csproj": {
+    "C:\\Users\\karat\\Desktop\\LangProgects\\glosslore-api-gateway\\glosslore-api-gateway\\glosslore-api-gateway.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\karat\\Desktop\\LangProgects\\glosslore-api-gateway\\glosslore-api-gateway\\Glosslore-api-gateway.csproj",
-        "projectName": "Glosslore-api-gateway",
-        "projectPath": "C:\\Users\\karat\\Desktop\\LangProgects\\glosslore-api-gateway\\glosslore-api-gateway\\Glosslore-api-gateway.csproj",
+        "projectUniqueName": "C:\\Users\\karat\\Desktop\\LangProgects\\glosslore-api-gateway\\glosslore-api-gateway\\glosslore-api-gateway.csproj",
+        "projectName": "glosslore-api-gateway",
+        "projectPath": "C:\\Users\\karat\\Desktop\\LangProgects\\glosslore-api-gateway\\glosslore-api-gateway\\glosslore-api-gateway.csproj",
         "packagesPath": "C:\\Users\\karat\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\karat\\Desktop\\LangProgects\\glosslore-api-gateway\\glosslore-api-gateway\\obj\\",
         "projectStyle": "PackageReference",
@@ -18,15 +18,15 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net6.0"
+          "net7.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net6.0": {
-            "targetAlias": "net6.0",
+          "net7.0": {
+            "targetAlias": "net7.0",
             "projectReferences": {}
           }
         },
@@ -37,20 +37,28 @@
         }
       },
       "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
+        "net7.0": {
+          "targetAlias": "net7.0",
           "dependencies": {
+            "MMLib.SwaggerForOcelot": {
+              "target": "Package",
+              "version": "[6.2.0, )"
+            },
             "Ocelot": {
               "target": "Package",
-              "version": "[18.0.0, )"
+              "version": "[19.0.2, )"
             },
-            "Swagger": {
+            "Ocelot.Cache.CacheManager": {
               "target": "Package",
-              "version": "[1.0.0, )"
+              "version": "[19.0.2, )"
+            },
+            "Ocelot.Provider.Polly": {
+              "target": "Package",
+              "version": "[19.0.2, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
-              "version": "[6.4.0, )"
+              "version": "[6.5.0, )"
             }
           },
           "imports": [
@@ -59,7 +67,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -71,7 +80,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }

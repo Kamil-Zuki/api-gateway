@@ -1,0 +1,23 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/repetition/{everything}",
+      "DownstreamScheme": "https",
+      "SwaggerKey": "repetition",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7150
+        }
+      ],
+      "UpstreamPathTemplate": "/repetition/{everything}",
+      "UpstreamHttpMethod": [
+        "GET",
+        "POST",
+        "PUT",
+        "Delete"
+      ]
+    }
+  ]
+}
+

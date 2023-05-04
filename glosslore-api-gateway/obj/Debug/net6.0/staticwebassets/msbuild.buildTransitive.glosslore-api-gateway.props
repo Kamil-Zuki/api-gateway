@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\glosslore-api-gateway.props" />
+</Project>
