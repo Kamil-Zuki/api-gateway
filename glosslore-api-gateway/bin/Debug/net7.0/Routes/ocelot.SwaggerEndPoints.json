@@ -16,7 +16,7 @@
       "TransformByOcelotConfig": false,
       "Config": [
         {
-          "Name": "Cambridge-Dictionary.API",
+          "Name": "Cambridge Dictionary Parser API",
           "Version": "1.0",
           "Url": "http://localhost:5284/parser/swagger/v1/swagger.json"
         }
@@ -27,7 +27,7 @@
       "TransformByOcelotConfig": true,
       "Config": [
         {
-          "Name": "Authorization.API",
+          "Name": "Authorization API",
           "Version": "1.0",
           "Url": "http://localhost:5284/auth/swagger/v1/swagger.json"
         }
@@ -35,10 +35,10 @@
     },
     {
       "Key": "repetition",
-      "TransformByOcelotConfig": true,
+      "TransformByOcelotConfig": false,
       "Config": [
         {
-          "Name": "Repetition-Alghorithm.API",
+          "Name": "Repetition Alghorithm API",
           "Version": "1.0",
           "Url": "http://localhost:5284/repetition/swagger/v1/swagger.json"
         }

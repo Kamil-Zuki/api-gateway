@@ -34,15 +34,13 @@ builder.Services.AddSwaggerGen();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-}
+
+app.UseSwagger();
 
 
-app.UseHttpsRedirection();
-
+app.UseAuthentication();
 app.UseAuthorization();
+app.UseHttpsRedirection();
 
 app.UseSwaggerForOcelotUI(options =>
 {
@@ -50,7 +48,7 @@ app.UseSwaggerForOcelotUI(options =>
     options.ReConfigureUpstreamSwaggerJson = AlterUpstream.AlterUpstreamSwaggerJson;
 
 }).UseOcelot().Wait();
- 
+
 app.MapControllers();
 
 app.Run();

@@ -70,7 +70,9 @@ C:\Users\karat\Desktop\LangProgects\glosslore-api-gateway\glosslore-api-gateway\
 C:\Users\karat\Desktop\LangProgects\glosslore-api-gateway\glosslore-api-gateway\bin\Debug\net7.0\runtimes\win\lib\netcoreapp2.0\System.Diagnostics.PerformanceCounter.dll
 C:\Users\karat\Desktop\LangProgects\glosslore-api-gateway\glosslore-api-gateway\bin\Debug\net7.0\Routes\ocelot.global.json
 C:\Users\karat\Desktop\LangProgects\glosslore-api-gateway\glosslore-api-gateway\bin\Debug\net7.0\Routes\ocelot.SwaggerEndPoints.json
-C:\Users\karat\Desktop\LangProgects\glosslore-api-gateway\glosslore-api-gateway\bin\Debug\net7.0\ocelot.json
 C:\Users\karat\Desktop\LangProgects\glosslore-api-gateway\glosslore-api-gateway\bin\Debug\net7.0\Routes\ocelot.parser.api.json
 C:\Users\karat\Desktop\LangProgects\glosslore-api-gateway\glosslore-api-gateway\bin\Debug\net7.0\Routes\ocelot.auth.api.json
 C:\Users\karat\Desktop\LangProgects\glosslore-api-gateway\glosslore-api-gateway\bin\Debug\net7.0\Routes\ocelot.repetition.api.json
+C:\Users\karat\Desktop\LangProgects\glosslore-api-gateway\glosslore-api-gateway\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\karat\Desktop\LangProgects\glosslore-api-gateway\glosslore-api-gateway\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\karat\Desktop\LangProgects\glosslore-api-gateway\glosslore-api-gateway\bin\Debug\net7.0\ocelot.json
