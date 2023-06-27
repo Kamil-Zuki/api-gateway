@@ -1,0 +1,50 @@
+{
+  "SwaggerEndPoints": [
+    {
+      "Key": "gateway",
+      "TransformByOcelotConfig": true,
+      "Config": [
+        {
+          "Name": "Gateway API",
+          "Version": "1.0",
+          "Url": "http://localhost:5284/swagger/v1/swagger.json"
+        }
+      ]
+    },
+    {
+      "Key": "dictionary-parser",
+      "TransformByOcelotConfig": true,
+      "Config": [
+        {
+          "Name": "Dictionary Parser API",
+          "Version": "1.0",
+          "Url": "http://localhost:5284/dictionary-parser/swagger/v1/swagger.json"
+        }
+      ]
+    },
+    {
+      "Key": "auth",
+      "TransformByOcelotConfig": true,
+      "Config": [
+        {
+          "Name": "Authorization API",
+          "Version": "1.0",
+          "Url": "http://localhost:5284/auth/swagger/v1/swagger.json"
+        }
+      ]
+    },
+    {
+      "Key": "repetition",
+      "TransformByOcelotConfig": false,
+      "Config": [
+        {
+          "Name": "Repetition Alghorithm API",
+          "Version": "1.0",
+          "Url": "http://localhost:5284/repetition/swagger/v1/swagger.json"
+        }
+      ]
+    }
+
+
+  ]
+}
