@@ -1,0 +1,19 @@
+version: "3.4"
+services:
+  api-gateway:
+    build:
+      context: C:\Users\karat\Desktop\ProgectsCurrent\api-gateway\api-gateway
+      dockerfile: Dockerfile
+    volumes:
+      - ./ocelot.json:/app/ocelot.json
+
+  dictionary-parser:
+    build:
+      context: C:\Users\karat\Desktop\ProgectsCurrent\dictionary-parser\dictionary-parser
+      dockerfile: Dockerfile
+
+  authorization-module:
+    build:
+      context: C:\Users\karat\Desktop\ProgectsCurrent\authorization-module\authorization-module.API
+      dockerfile: Dockerfile
+
