@@ -1,0 +1,103 @@
+{
+  "Routes": [
+    {
+      //  "DownstreamPathTemplate": "/v1/parser/parse-by-html",
+      //  "DownstreamScheme": "https",
+      //  "DownstreamHostAndPorts": [
+      //    {
+      //      "Host": "localhost",
+      //      "Port": 7025
+      //    }
+      //  ],
+      //  "UpstreamPathTemplate": "/v1/parser/parse-by-html",
+      //  "UpstreamHttpMethod": [ "Get" ]
+      //},
+      //{
+      //  "DownstreamPathTemplate": "/v1/parser/term-data?term={term}&isWord={isWord}&isPhrasalVerb={isPhrasalVerb}&isIdiom={isIdiom}",
+      //  "DownstreamScheme": "https",
+      //  "DownstreamHostAndPorts": [
+      //    {
+      //      "Host": "localhost",
+      //      "Port": 7025
+      //    }
+      //  ],
+      //  "UpstreamPathTemplate": "/v1/parser/term-data",
+      //  "UpstreamHttpMethod": [ "Get" ]
+      //},
+      //{
+      //  "DownstreamPathTemplate": "/swagger/{everything}",
+      //  "DownstreamScheme": "https",
+      //  "DownstreamHostAndPorts": [
+      //    {
+      //      "Host": "localhost",
+      //      "Port": 7025
+      //    }
+      //  ],
+      //  "UpstreamPathTemplate": "/swagger/{everything}",
+      //  "UpstreamHttpMethod": [ "Get" ]
+      //},
+
+      //  "DownstreamPathTemplate": "/api/{everything}",
+      //  "DownstreamScheme": "https",
+      //  "DownstreamHostAndPorts": [
+      //    {
+      //      "Host": "localhost",
+      //      "Port": 7025
+      //    }
+      //  ],
+      //  "UpstreamPathTemplate": "/api/{everything}",
+      //  "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ],
+      //  "RouteIsCaseSensitive": false
+      //},
+      //{
+      //  "DownstreamPathTemplate": "/accounts/{everything}",
+      //  "DownstreamScheme": "https",
+      //  "DownstreamHostAndPorts": [
+      //    {
+      //      "Host": "localhost",
+      //      "Port": 7027
+      //    }
+      //  ],
+      //  "UpstreamPathTemplate": "/accounts/{everything}",
+      //  "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ],
+      //  "RouteIsCaseSensitive": false
+      //},
+
+
+      "DownstreamPathTemplate": "/v1/{everything}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7025
+        }
+      ],
+      "UpstreamPathTemplate": "/v1/{everything}",
+      "UpstreamHttpMethod": [ "Get" ],
+      "RouteIsCaseSensitive": false,
+      "DownstreamSwaggerEndPoint": "/swagger/v1/swagger.json"
+    },
+    {
+      "DownstreamPathTemplate": "/v2/{everything}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7027
+        }
+      ],
+      "UpstreamPathTemplate": "/v2/{everything}",
+      "UpstreamHttpMethod": [ "Get" ],
+      "RouteIsCaseSensitive": false,
+      "DownstreamSwaggerEndPoint": "/swagger/v2/swagger.json"
+    }
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "https://localhost:5284",
+    "ReRoutesCaseSensitive": false,
+    "SwaggerKey": {
+      "Key": "Ocelot",
+      "Type": "Header"
+    }
+  }
+}

@@ -1,0 +1,45 @@
+name: dockercompose7808368633203066415
+services:
+  api-gateway:
+    build:
+      context: C:\Users\karat\Desktop\ProgectsCurrent\api-gateway\api-gateway
+      dockerfile: Dockerfile
+    container_name: api-gateway
+    depends_on:
+      authorization-module:
+        condition: service_started
+      dictionary-parser:
+        condition: service_started
+    networks:
+      backend: null
+    ports:
+    - mode: ingress
+      target: 80
+      published: "8050"
+      protocol: tcp
+    volumes:
+    - type: bind
+      source: C:\Users\karat\Desktop\ProgectsCurrent\api-gateway\api-gateway\ocelot.json
+      target: /app/ocelot.json
+      bind:
+        create_host_path: true
+  authorization-module:
+    build:
+      context: C:\Users\karat\Desktop\ProgectsCurrent\authorization-module\authorization-module.API
+      dockerfile: Dockerfile
+    container_name: authorization-module
+    environment:
+      DB_CONNECTION_STRING: Server=host.docker.internal;Port=5432;Database=glosslore;
+        User Id=postgres;Password=kamkam14
+    networks:
+      backend: null
+  dictionary-parser:
+    build:
+      context: C:\Users\karat\Desktop\ProgectsCurrent\dictionary-parser\dictionary-parser
+      dockerfile: Dockerfile
+    container_name: dictionary-parser
+    networks:
+      backend: null
+networks:
+  backend:
+    name: dockercompose7808368633203066415_backend

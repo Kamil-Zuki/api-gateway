@@ -1,0 +1,23 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/auth/{everything}",
+      "DownstreamScheme": "http",
+      "SwaggerKey": "authorization-module",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "authorization-module",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/auth/{everything}",
+      "UpstreamHttpMethod": [
+        "GET",
+        "POST",
+        "PUT",
+        "Delete"
+      ]
+    }
+    
+  ]
+}
