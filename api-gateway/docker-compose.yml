@@ -1,19 +1,41 @@
-version: "3.4"
+version: '3.8'
 services:
   api-gateway:
+    container_name: api-gateway
     build:
       context: C:\Users\karat\Desktop\ProgectsCurrent\api-gateway\api-gateway
       dockerfile: Dockerfile
     volumes:
       - ./ocelot.json:/app/ocelot.json
+    depends_on:
+      - dictionary-parser
+      - authorization-module
+    ports:
+      - "8050:80"
+    networks:
+      - backend
 
   dictionary-parser:
+    container_name: dictionary-parser
     build:
       context: C:\Users\karat\Desktop\ProgectsCurrent\dictionary-parser\dictionary-parser
       dockerfile: Dockerfile
+    networks:
+      - backend
 
   authorization-module:
+    container_name: authorization-module
     build:
       context: C:\Users\karat\Desktop\ProgectsCurrent\authorization-module\authorization-module.API
       dockerfile: Dockerfile
+    networks:
+      - backend
+    environment:
+        DB_CONNECTION_STRING: "Server=host.docker.internal;Port=5432;Database=glosslore; User Id=postgres;Password=kamkam14"
+
+
+networks:
+  backend:
+
+
 
