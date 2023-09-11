@@ -5,13 +5,15 @@ VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "api-gateway", "api-gateway.csproj", "{6EEFB7A4-CC05-44CA-B106-82D8147F10AB}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "authorization-module.API", "..\..\authorization-module\authorization-module-API\authorization-module.API.csproj", "{B401798B-85A2-4F05-A2E9-9C1A9C83D084}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "personal-vocab.API", "..\..\personal-vocab\personal-vocab\personal-vocab.API.csproj", "{66897526-A593-46F0-9875-4FB182A4CE89}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "personal-vocab.DAL", "..\..\personal-vocab\personal-vocab.DAL\personal-vocab.DAL.csproj", "{D33EF5F2-3796-4DF5-B63B-4FECA6CB0C39}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dictionary-parser.API", "..\..\dictionary-parser\dictionary-parser\dictionary-parser.API.csproj", "{5E30AFDC-B0B6-4223-BC01-0716109A1840}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "personal-vocab.API", "..\..\personal-vocab\personal-vocab.API\personal-vocab.API.csproj", "{B8447877-18C5-446C-8C22-3B91265DD91D}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{C23BA00D-C00B-4F2F-B1AE-36B37C32DB4C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "authorization-module.API", "..\..\authorization-module\authorization-module.API\authorization-module.API.csproj", "{D0AF5A17-4772-4CBE-AFAC-A5F032007C21}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,14 +25,6 @@ Global
 		{6EEFB7A4-CC05-44CA-B106-82D8147F10AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6EEFB7A4-CC05-44CA-B106-82D8147F10AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6EEFB7A4-CC05-44CA-B106-82D8147F10AB}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B401798B-85A2-4F05-A2E9-9C1A9C83D084}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B401798B-85A2-4F05-A2E9-9C1A9C83D084}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B401798B-85A2-4F05-A2E9-9C1A9C83D084}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B401798B-85A2-4F05-A2E9-9C1A9C83D084}.Release|Any CPU.Build.0 = Release|Any CPU
-		{66897526-A593-46F0-9875-4FB182A4CE89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{66897526-A593-46F0-9875-4FB182A4CE89}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{66897526-A593-46F0-9875-4FB182A4CE89}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{66897526-A593-46F0-9875-4FB182A4CE89}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D33EF5F2-3796-4DF5-B63B-4FECA6CB0C39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D33EF5F2-3796-4DF5-B63B-4FECA6CB0C39}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D33EF5F2-3796-4DF5-B63B-4FECA6CB0C39}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -39,6 +33,18 @@ Global
 		{5E30AFDC-B0B6-4223-BC01-0716109A1840}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5E30AFDC-B0B6-4223-BC01-0716109A1840}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5E30AFDC-B0B6-4223-BC01-0716109A1840}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8447877-18C5-446C-8C22-3B91265DD91D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8447877-18C5-446C-8C22-3B91265DD91D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8447877-18C5-446C-8C22-3B91265DD91D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8447877-18C5-446C-8C22-3B91265DD91D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C23BA00D-C00B-4F2F-B1AE-36B37C32DB4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C23BA00D-C00B-4F2F-B1AE-36B37C32DB4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C23BA00D-C00B-4F2F-B1AE-36B37C32DB4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C23BA00D-C00B-4F2F-B1AE-36B37C32DB4C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0AF5A17-4772-4CBE-AFAC-A5F032007C21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0AF5A17-4772-4CBE-AFAC-A5F032007C21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0AF5A17-4772-4CBE-AFAC-A5F032007C21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0AF5A17-4772-4CBE-AFAC-A5F032007C21}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -2,12 +2,12 @@
   "Routes": [
     {
       "DownstreamPathTemplate": "/auth/{everything}",
-      "DownstreamScheme": "https",
-      "SwaggerKey": "auth",
+      "DownstreamScheme": "http",
+      "SwaggerKey": "authorization-module",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": 7027
+          "Host": "authorization-module",
+          "Port": 80
         }
       ],
       "UpstreamPathTemplate": "/auth/{everything}",
@@ -18,5 +18,6 @@
         "Delete"
       ]
     }
+    
   ]
 }
