@@ -5,3 +5,4 @@ obj/
 .idea
 docker-compose.override.yml
 api-gateway/.vs/
+api-gateway/obj/
