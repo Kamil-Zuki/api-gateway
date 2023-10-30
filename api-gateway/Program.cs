@@ -20,6 +20,7 @@ builder.Configuration.AddOcelotWithSwaggerSupport(options =>
     options.Folder = routes;
 });
 
+
 builder.Services.AddOcelot(builder.Configuration).AddPolly();
 builder.Services.AddSwaggerForOcelot(builder.Configuration);
 

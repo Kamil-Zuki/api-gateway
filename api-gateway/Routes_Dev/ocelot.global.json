@@ -1,5 +1,5 @@
 {
   "GlobalConfiguration": {
-    "BaseUrl": "http://api-gateway:5284"
+    "BaseUrl": "http://localhost:5284"
   }
 }
