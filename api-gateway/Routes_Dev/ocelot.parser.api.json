@@ -3,12 +3,12 @@
   "Routes": [
     {
       "DownstreamPathTemplate": "/dictionary-parser/{everything}",
-      "DownstreamScheme": "http",
+      "DownstreamScheme": "https",
       "SwaggerKey": "dictionary-parser",
       "DownstreamHostAndPorts": [
         {
           "Host": "dictionary-parser",
-          "Port": 80
+          "Port": 7025
         }
       ],
       "UpstreamPathTemplate": "/dictionary-parser/{everything}",
@@ -26,7 +26,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "dictionary-parser",
-          "Port": 80
+          "Port": 7025
         }
       ],
       "UpstreamPathTemplate": "/{everything}",

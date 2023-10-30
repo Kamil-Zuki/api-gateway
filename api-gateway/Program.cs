@@ -6,7 +6,14 @@ using Ocelot.Provider.Polly;
 
 var builder = WebApplication.CreateBuilder(args);
 
-var routes = "Routes";
+var environment = Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT");
+string routes = string.Empty;
+//string? routes = string.Empty;
+//if (environment == "Development")
+//    routes = "Routes_Dev";
+//else
+
+routes = environment == "Development" ? "Routes_Dev" : "Routes_Prod";
 
 builder.Configuration.AddOcelotWithSwaggerSupport(options =>
 {
@@ -14,9 +21,8 @@ builder.Configuration.AddOcelotWithSwaggerSupport(options =>
 });
 
 builder.Services.AddOcelot(builder.Configuration).AddPolly();
-builder.Services.AddSwaggerForOcelot(builder.Configuration); 
+builder.Services.AddSwaggerForOcelot(builder.Configuration);
 
-var environment = Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT");
 builder.Configuration.SetBasePath(Directory.GetCurrentDirectory())
     .AddOcelot(routes, builder.Environment)
     .AddEnvironmentVariables();
@@ -41,6 +47,7 @@ app.UseSwagger();
 app.UseAuthentication();
 app.UseAuthorization();
 app.UseHttpsRedirection();
+
 
 app.UseSwaggerForOcelotUI(options =>
 {

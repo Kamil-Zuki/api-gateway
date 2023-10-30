@@ -30,12 +30,34 @@ services:
       dockerfile: Dockerfile
     networks:
       - backend
+    depends_on:
+      - rabbitmq
     environment:
         DB_CONNECTION_STRING: "Server=host.docker.internal;Port=5432;Database=glosslore; User Id=postgres;Password=kamkam14"
 
+  personal-vocab:
+    container_name: personal-vocab
+    build:
+        context: C:\Users\karat\Desktop\ProgectsCurrent\personal-vocab
+        dockerfile: Dockerfile
+    networks:
+     - backend
+    depends_on:
+     - rabbitmq
+    environment:
+        DB_CONNECTION_STRING: "Server=host.docker.internal;Port=5432;Database=personal-vocab; User Id=postgres;Password=kamkam14"
+   
+  rabbitmq:
+    container_name: rabbitmq
+    image: rabbitmq:3-management
+    ports:
+    - "5672:5672"
+    - "15672:15672"
+    networks:
+    - backend
+    environment:
+        RABBITMQ_DEFAULT_USER: "guest"
+        RABBITMQ_DEFAULT_PASS: "1234"
 
 networks:
   backend:
-
-
-

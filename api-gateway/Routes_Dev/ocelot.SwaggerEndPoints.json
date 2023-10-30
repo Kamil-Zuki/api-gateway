@@ -7,7 +7,7 @@
         {
           "Name": "Gateway API",
           "Version": "1.0",
-          "Url": "http://api-gateway:80/swagger/v1/swagger.json"
+          "Url": "http://api-gateway:5284/swaggger/v1/swagger.json"
         }
       ]
     },
@@ -18,7 +18,7 @@
         {
           "Name": "Dictionary Parser API",
           "Version": "1.0",
-          "Url": "http://dictionary-parser:80/dictionary-parser/swagger/v1/swagger.json"
+          "Url": "http://dictionary-parser:5284/dictionary-parser/swagger/v1/swagger.json"
         }
       ]
     },
@@ -29,7 +29,7 @@
         {
           "Name": "Authorization API",
           "Version": "1.0",
-          "Url": "http://authorization-module:80/authorization-module/swagger/v1/swagger.json"
+          "Url": "http://authorization-module:5284/authorization-module/swagger/v1/swagger.json"
         }
       ]
     },
@@ -40,7 +40,7 @@
         {
           "Name": "Repetition Alghorithm API",
           "Version": "1.0",
-          "Url": "http://localhost:80/repetition/swagger/v1/swagger.json"
+          "Url": "http://localhost:3000/repetition/swagger/v1/swagger.json"
         }
       ]
     }
