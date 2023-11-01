@@ -2,39 +2,18 @@
 {
   "Routes": [
     {
-      "DownstreamPathTemplate": "/dictionary-parser/{everything}",
-      "DownstreamScheme": "https",
-      "SwaggerKey": "dictionary-parser",
-      "DownstreamHostAndPorts": [
-        {
-          "Host": "dictionary-parser",
-          "Port": 7025
-        }
-      ],
-      "UpstreamPathTemplate": "/dictionary-parser/{everything}",
-      "UpstreamHttpMethod": [
-        "GET",
-        "POST",
-        "PUT",
-        "DELETE"
-      ]
-    },
-    {
-      "DownstreamPathTemplate": "/api/{everything}",
+      "DownstreamPathTemplate": "/api/v1/cambridge-dictionary/term",
       "DownstreamScheme": "http",
       "SwaggerKey": "dictionary-parser",
       "DownstreamHostAndPorts": [
         {
-          "Host": "dictionary-parser",
-          "Port": 7025
+          "Host": "localhost",
+          "Port": 5208
         }
       ],
-      "UpstreamPathTemplate": "/{everything}",
+      "UpstreamPathTemplate": "/api/v1/cambridge-dictionary/term",
       "UpstreamHttpMethod": [
-        "GET",
-        "POST",
-        "PUT",
-        "DELETE"
+        "GET"
       ]
     }
   ]

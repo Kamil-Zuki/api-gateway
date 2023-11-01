@@ -45,16 +45,14 @@ var app = builder.Build();
 app.UseSwagger();
 
 
-app.UseAuthentication();
-app.UseAuthorization();
 app.UseHttpsRedirection();
-
+//app.UseAuthentication();
+app.UseAuthorization();
 
 app.UseSwaggerForOcelotUI(options =>
 {
     options.PathToSwaggerGenerator = "/swagger/docs";
     options.ReConfigureUpstreamSwaggerJson = AlterUpstream.AlterUpstreamSwaggerJson;
-
 }).UseOcelot().Wait();
 
 app.MapControllers();

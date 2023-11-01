@@ -1,16 +1,16 @@
 {
   "Routes": [
     {
-      "DownstreamPathTemplate": "/auth/{everything}",
-      "DownstreamScheme": "https",
+      "DownstreamPathTemplate": "/api/v1/auth/{everything}",
+      "DownstreamScheme": "http",
       "SwaggerKey": "authorization-module",
       "DownstreamHostAndPorts": [
         {
-          "Host": "authorization-module",
-          "Port": 7027
+          "Host": "localhost",
+          "Port": 5027
         }
       ],
-      "UpstreamPathTemplate": "/auth/{everything}",
+      "UpstreamPathTemplate": "/api/v1/auth/{everything}",
       "UpstreamHttpMethod": [
         "GET",
         "POST",

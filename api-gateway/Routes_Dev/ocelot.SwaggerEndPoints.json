@@ -5,9 +5,9 @@
       "TransformByOcelotConfig": true,
       "Config": [
         {
-          "Name": "Gateway API",
+          "Name": "Gateway.API",
           "Version": "1.0",
-          "Url": "http://localhost:5284/swaggger/v1/swagger.json"
+          "Url": "http://localhost:5284/swagger/v1/swagger.json"
         }
       ]
     },
@@ -16,9 +16,9 @@
       "TransformByOcelotConfig": true,
       "Config": [
         {
-          "Name": "Dictionary Parser API",
+          "Name": "Dictionary-Parser.API",
           "Version": "1.0",
-          "Url": "http://localhost:5284/dictionary-parser/swagger/v1/swagger.json"
+          "Url": "http://localhost:5208/dictionary-parser/swagger/v1/swagger.json"
         }
       ]
     },
@@ -27,20 +27,20 @@
       "TransformByOcelotConfig": true,
       "Config": [
         {
-          "Name": "Authorization API",
+          "Name": "Authorization.API",
           "Version": "1.0",
-          "Url": "http://localhost:5284/authorization-module/swagger/v1/swagger.json"
+          "Url": "http://localhost:5027/authorization-module/swagger/v1/swagger.json"
         }
       ]
     },
     {
       "Key": "personal-vocab",
-      "TransformByOcelotConfig": false,
+      "TransformByOcelotConfig": true,
       "Config": [
         {
-          "Name": "Repetition Alghorithm API",
+          "Name": "Personal-Vocab.API",
           "Version": "1.0",
-          "Url": "http://localhost:5284/personal-vocab/swagger/v1/swagger.json"
+          "Url": "http://localhost:5150/personal-vocab/swagger/v1/swagger.json"
         }
       ]
     }

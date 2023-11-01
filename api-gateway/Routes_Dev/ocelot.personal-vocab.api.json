@@ -2,58 +2,20 @@
 {
   "Routes": [
     {
-      "DownstreamPathTemplate": "/personal-vocab/{everything}",
-      "DownstreamScheme": "https",
+      "DownstreamPathTemplate": "/api/v1/{everything}",
+      "DownstreamScheme": "http",
       "SwaggerKey": "personal-vocab",
       "DownstreamHostAndPorts": [
         {
-          "Host": "personal-vocab",
-          "Port": 7150
+          "Host": "localhost",
+          "Port": 5150
         }
       ],
-      "UpstreamPathTemplate": "/personal-vocab/{everything}",
+      "UpstreamPathTemplate": "/api/v1/{everything}",
       "UpstreamHttpMethod": [
         "GET",
         "POST",
         "PUT",
-        "Delete"
-      ]
-    },
-    {
-      "DownstreamPathTemplate": "/group/v1/{everything}",
-      "DownstreamScheme": "https",
-      "SwaggerKey": "personal-vocab",
-      "DownstreamHostAndPorts": [
-        {
-          "Host": "personal-vocab",
-          "Port": 7150
-        }
-      ],
-      "UpstreamPathTemplate": "/group/v1/{everything}",
-      "UpstreamHttpMethod": [
-        "GET",
-        "POST",
-        "PUT",
-        "PATCH",
-        "Delete"
-      ]
-    },
-    {
-      "DownstreamPathTemplate": "/group/v1",
-      "DownstreamScheme": "https",
-      "SwaggerKey": "personal-vocab",
-      "DownstreamHostAndPorts": [
-        {
-          "Host": "personal-vocab",
-          "Port": 7150
-        }
-      ],
-      "UpstreamPathTemplate": "/group/v1",
-      "UpstreamHttpMethod": [
-        "GET",
-        "POST",
-        "PUT",
-        "PATCH",
         "Delete"
       ]
     }
