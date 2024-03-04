@@ -26,7 +26,7 @@ services:
   authorization-module:
     container_name: authorization-module
     build:
-      context: C:\Users\karat\Desktop\ProgectsCurrent\authorization-module\authorization-module.API
+      context: .\authorization-module\authorization-module.API
       dockerfile: Dockerfile
     networks:
       - backend
