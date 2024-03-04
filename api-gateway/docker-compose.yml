@@ -3,7 +3,7 @@ services:
   api-gateway:
     container_name: api-gateway
     build:
-      context: C:\Users\karat\Desktop\ProgectsCurrent\api-gateway\api-gateway
+      context: .\api-gateway\api-gateway
       dockerfile: Dockerfile
     volumes:
       - ./ocelot.json:/app/ocelot.json
@@ -18,7 +18,7 @@ services:
   dictionary-parser:
     container_name: dictionary-parser
     build:
-      context: C:\Users\karat\Desktop\ProgectsCurrent\dictionary-parser\dictionary-parser
+      context: .\dictionary-parser\dictionary-parser
       dockerfile: Dockerfile
     networks:
       - backend
@@ -38,7 +38,7 @@ services:
   personal-vocab:
     container_name: personal-vocab
     build:
-        context: C:\Users\karat\Desktop\ProgectsCurrent\personal-vocab
+        context: .\personal-vocab
         dockerfile: Dockerfile
     networks:
      - backend
