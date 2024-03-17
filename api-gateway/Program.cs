@@ -14,7 +14,7 @@ string routes = string.Empty;
 //else
 
 routes = environment == "Development" ? "Routes_Dev" : "Routes_Prod";
-
+Console.WriteLine(routes);
 builder.Configuration.AddOcelotWithSwaggerSupport(options =>
 {
     options.Folder = routes;
@@ -52,9 +52,10 @@ app.UseAuthorization();
 app.UseSwaggerForOcelotUI(options =>
 {
     options.PathToSwaggerGenerator = "/swagger/docs";
+    Console.WriteLine(options.PathToSwaggerGenerator);
     options.ReConfigureUpstreamSwaggerJson = AlterUpstream.AlterUpstreamSwaggerJson;
 }).UseOcelot().Wait();
 
 app.MapControllers();
-
+Console.WriteLine("api-gateway is running");
 app.Run();

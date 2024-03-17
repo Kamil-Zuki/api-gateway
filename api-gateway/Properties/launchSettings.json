@@ -1,6 +1,6 @@
 {
   "profiles": {
-    "glosslore_api_gateway": {
+    "api_gateway": {
       "commandName": "Project",
       "launchBrowser": false,
       "launchUrl": "swagger",
