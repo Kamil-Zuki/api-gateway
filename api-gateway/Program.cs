@@ -14,7 +14,9 @@ string routes = string.Empty;
 //else
 
 routes = environment == "Development" ? "Routes_Dev" : "Routes_Prod";
+builder.WebHost.UseUrls("http://*:80");
 Console.WriteLine(routes);
+
 builder.Configuration.AddOcelotWithSwaggerSupport(options =>
 {
     options.Folder = routes;
