@@ -34,13 +34,13 @@
       ]
     },
     {
-      "Key": "repetition",
-      "TransformByOcelotConfig": false,
+      "Key": "personal-vocab",
+      "TransformByOcelotConfig": true,
       "Config": [
         {
-          "Name": "Repetition Alghorithm API",
+          "Name": "Personal Vocab API",
           "Version": "1.0",
-          "Url": "http://localhost:80/repetition/swagger/v1/swagger.json"
+          "Url": "http://personal-vocab:80/personal-vocab/swagger/v1/swagger.json"
         }
       ]
     }
