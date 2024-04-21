@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "personal-vocab.API", "..\..
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "authorization-module.API", "..\..\authorization-module\authorization-module.API\authorization-module.API.csproj", "{D0AF5A17-4772-4CBE-AFAC-A5F032007C21}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dictionary-parser.API", "..\..\dictionary-parser\dictionary-parser.API.csproj", "{F360A399-B990-491E-AED4-F136D8AAFC59}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{D0AF5A17-4772-4CBE-AFAC-A5F032007C21}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D0AF5A17-4772-4CBE-AFAC-A5F032007C21}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D0AF5A17-4772-4CBE-AFAC-A5F032007C21}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F360A399-B990-491E-AED4-F136D8AAFC59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F360A399-B990-491E-AED4-F136D8AAFC59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F360A399-B990-491E-AED4-F136D8AAFC59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F360A399-B990-491E-AED4-F136D8AAFC59}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
