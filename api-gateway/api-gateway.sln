@@ -7,8 +7,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "api-gateway", "api-gateway.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "personal-vocab.DAL", "..\..\personal-vocab\personal-vocab.DAL\personal-vocab.DAL.csproj", "{D33EF5F2-3796-4DF5-B63B-4FECA6CB0C39}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dictionary-parser.API", "..\..\dictionary-parser\dictionary-parser\dictionary-parser.API.csproj", "{5E30AFDC-B0B6-4223-BC01-0716109A1840}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "personal-vocab.API", "..\..\personal-vocab\personal-vocab.API\personal-vocab.API.csproj", "{B8447877-18C5-446C-8C22-3B91265DD91D}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "authorization-module.API", "..\..\authorization-module\authorization-module.API\authorization-module.API.csproj", "{D0AF5A17-4772-4CBE-AFAC-A5F032007C21}"
@@ -27,10 +25,6 @@ Global
 		{D33EF5F2-3796-4DF5-B63B-4FECA6CB0C39}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D33EF5F2-3796-4DF5-B63B-4FECA6CB0C39}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D33EF5F2-3796-4DF5-B63B-4FECA6CB0C39}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5E30AFDC-B0B6-4223-BC01-0716109A1840}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5E30AFDC-B0B6-4223-BC01-0716109A1840}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5E30AFDC-B0B6-4223-BC01-0716109A1840}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5E30AFDC-B0B6-4223-BC01-0716109A1840}.Release|Any CPU.Build.0 = Release|Any CPU
 		{B8447877-18C5-446C-8C22-3B91265DD91D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{B8447877-18C5-446C-8C22-3B91265DD91D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B8447877-18C5-446C-8C22-3B91265DD91D}.Release|Any CPU.ActiveCfg = Release|Any CPU
