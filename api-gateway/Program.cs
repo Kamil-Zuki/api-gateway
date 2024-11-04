@@ -1,10 +1,14 @@
 using api_gateway.Config;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
 using MMLib.SwaggerForOcelot.DependencyInjection;
 using Ocelot.DependencyInjection;
 using Ocelot.Middleware;
 using Ocelot.Provider.Polly;
+using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
+
 
 var environment = Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT");
 string routes = string.Empty;
@@ -17,7 +21,6 @@ routes = environment == "Development" ? "Routes_Dev" : "Routes_Prod";
 #if RELEASE
 builder.WebHost.UseUrls("http://*:80");
 #endif
-Console.WriteLine(routes);
 
 builder.Configuration.AddOcelotWithSwaggerSupport(options =>
 {
@@ -33,33 +36,46 @@ builder.Configuration.SetBasePath(Directory.GetCurrentDirectory())
     .AddEnvironmentVariables();
 
 
-// Add services to the container.
-
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+
 builder.Services.AddEndpointsApiExplorer();
 
-// Swagger for ocelot
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("cors",
+                      policy =>
+                      {
+                          policy
+                          .AllowAnyOrigin()
+                          .AllowAnyMethod()
+                          .AllowAnyHeader();
+                      });
+});
+
+
+
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
 
 app.UseSwagger();
 
-
 app.UseHttpsRedirection();
+
+app.UseCors("cors");
+
 //app.UseAuthentication();
-app.UseAuthorization();
+//app.UseAuthorization();
 
 app.UseSwaggerForOcelotUI(options =>
 {
     options.PathToSwaggerGenerator = "/swagger/docs";
-    Console.WriteLine(options.PathToSwaggerGenerator);
+
     options.ReConfigureUpstreamSwaggerJson = AlterUpstream.AlterUpstreamSwaggerJson;
 }).UseOcelot().Wait();
 
+
 app.MapControllers();
-Console.WriteLine("api-gateway is running");
+
 app.Run();
