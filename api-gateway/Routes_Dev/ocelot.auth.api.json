@@ -11,6 +11,8 @@
         }
       ],
       "UpstreamPathTemplate": "/api/v1/auth/{everything}",
+      "RouteIsCaseSensitive": false,
+      "AddQueryStringFromUpstream": true,
       "UpstreamHttpMethod": [
         "GET",
         "POST",

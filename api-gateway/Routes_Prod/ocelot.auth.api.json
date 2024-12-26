@@ -1,7 +1,7 @@
 {
   "Routes": [
     {
-      "DownstreamPathTemplate": "/authorization-module/{everything}",
+      "DownstreamPathTemplate": "/api/{everything}",
       "DownstreamScheme": "http",
       "SwaggerKey": "authorization-module",
       "DownstreamHostAndPorts": [
@@ -17,25 +17,8 @@
         "PUT",
         "DELETE"
       ]
-    },
-    {
-      "DownstreamPathTemplate": "/api/{everything}",
-      "DownstreamScheme": "http",
-      "SwaggerKey": "authorization-module",
-      "DownstreamHostAndPorts": [
-        {
-          "Host": "authorization-module",
-          "Port": 80
-        }
-      ],
-      "UpstreamPathTemplate": "/api/{everything}",
-      "UpstreamHttpMethod": [
-        "GET",
-        "POST",
-        "PUT",
-        "Delete"
-      ]
     }
-
   ]
 }
+
+

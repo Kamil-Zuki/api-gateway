@@ -2,24 +2,6 @@
 {
   "Routes": [
     {
-      "DownstreamPathTemplate": "/dictionary-parser/{everything}",
-      "DownstreamScheme": "http",
-      "SwaggerKey": "dictionary-parser",
-      "DownstreamHostAndPorts": [
-        {
-          "Host": "dictionary-parser",
-          "Port": 80
-        }
-      ],
-      "UpstreamPathTemplate": "/dictionary-parser/{everything}",
-      "UpstreamHttpMethod": [
-        "GET",
-        "POST",
-        "PUT",
-        "DELETE"
-      ]
-    },
-    {
       "DownstreamPathTemplate": "/api/{everything}",
       "DownstreamScheme": "http",
       "SwaggerKey": "dictionary-parser",
@@ -29,7 +11,9 @@
           "Port": 80
         }
       ],
-      "UpstreamPathTemplate": "/{everything}",
+      "UpstreamPathTemplate": "/dictionary-parser/{everything}",
+      "RouteIsCaseSensitive": false,
+      "AddQueryStringFromUpstream": true,
       "UpstreamHttpMethod": [
         "GET",
         "POST",
