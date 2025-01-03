@@ -18,27 +18,11 @@
         "POST",
         "PUT",
         "DELETE"
-      ]
-    },
-    {
-      "DownstreamPathTemplate": "/api/v1/deck",
-      "DownstreamScheme": "http",
-      "SwaggerKey": "personal-vocab",
-      "DownstreamHostAndPorts": [
-        {
-          "Host": "personal-vocab",
-          "Port": 80
-        }
       ],
-      "UpstreamPathTemplate": "/api/v1/deck",
-      "RouteIsCaseSensitive": false,
-      "AddQueryStringFromUpstream": true,
-      "UpstreamHttpMethod": [
-        "GET",
-        "POST",
-        "PUT",
-        "DELETE"
-      ]
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      }
     },
     {
       "DownstreamPathTemplate": "/api/v1/group{everything}",
@@ -58,27 +42,11 @@
         "POST",
         "PUT",
         "DELETE"
-      ]
-    },
-    {
-      "DownstreamPathTemplate": "/api/v1/group",
-      "DownstreamScheme": "http",
-      "SwaggerKey": "personal-vocab",
-      "DownstreamHostAndPorts": [
-        {
-          "Host": "personal-vocab",
-          "Port": 80
-        }
       ],
-      "UpstreamPathTemplate": "/api/v1/group",
-      "RouteIsCaseSensitive": false,
-      "AddQueryStringFromUpstream": true,
-      "UpstreamHttpMethod": [
-        "GET",
-        "POST",
-        "PUT",
-        "DELETE"
-      ]
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      }
     },
     {
       "DownstreamPathTemplate": "/api/v1/term{everything}",
@@ -98,27 +66,11 @@
         "POST",
         "PUT",
         "DELETE"
-      ]
-    },
-    {
-      "DownstreamPathTemplate": "/api/v1/term",
-      "DownstreamScheme": "http",
-      "SwaggerKey": "personal-vocab",
-      "DownstreamHostAndPorts": [
-        {
-          "Host": "personal-vocab",
-          "Port": 80
-        }
       ],
-      "UpstreamPathTemplate": "/api/v1/term",
-      "RouteIsCaseSensitive": false,
-      "AddQueryStringFromUpstream": true,
-      "UpstreamHttpMethod": [
-        "GET",
-        "POST",
-        "PUT",
-        "DELETE"
-      ]
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      }
     }
   ]
 }
