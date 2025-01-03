@@ -24,30 +24,30 @@
         "AllowedScopes": []
       }
     },
-    {
-      "DownstreamPathTemplate": "/api/v1/group{everything}",
-      "DownstreamScheme": "http",
-      "SwaggerKey": "personal-vocab",
-      "DownstreamHostAndPorts": [
-        {
-          "Host": "personal-vocab",
-          "Port": 80
-        }
-      ],
-      "UpstreamPathTemplate": "/api/v1/group{everything}",
-      "RouteIsCaseSensitive": false,
-      "AddQueryStringFromUpstream": true,
-      "UpstreamHttpMethod": [
-        "GET",
-        "POST",
-        "PUT",
-        "DELETE"
-      ],
-      "AuthenticationOptions": {
-        "AuthenticationProviderKey": "Bearer",
-        "AllowedScopes": []
-      }
-    },
+    //{
+    //  "DownstreamPathTemplate": "/api/v1/group{everything}",
+    //  "DownstreamScheme": "http",
+    //  "SwaggerKey": "personal-vocab",
+    //  "DownstreamHostAndPorts": [
+    //    {
+    //      "Host": "personal-vocab",
+    //      "Port": 80
+    //    }
+    //  ],
+    //  "UpstreamPathTemplate": "/api/v1/group{everything}",
+    //  "RouteIsCaseSensitive": false,
+    //  "AddQueryStringFromUpstream": true,
+    //  "UpstreamHttpMethod": [
+    //    "GET",
+    //    "POST",
+    //    "PUT",
+    //    "DELETE"
+    //  ],
+    //  "AuthenticationOptions": {
+    //    "AuthenticationProviderKey": "Bearer",
+    //    "AllowedScopes": []
+    //  }
+    //},
     {
       "DownstreamPathTemplate": "/api/v1/group",
       "DownstreamScheme": "http",
