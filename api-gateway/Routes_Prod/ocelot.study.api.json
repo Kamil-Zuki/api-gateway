@@ -1,0 +1,25 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/api/v1/srs/{everything}",
+      "DownstreamScheme": "http",
+      "SwaggerKey": "authorization-module",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "study-module",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1/srs/{everything}",
+      "RouteIsCaseSensitive": false,
+      "AddQueryStringFromUpstream": true,
+      "UpstreamHttpMethod": [
+        "GET",
+        "POST",
+        "PUT",
+        "DELETE"
+      ]
+    }
+
+  ]
+}

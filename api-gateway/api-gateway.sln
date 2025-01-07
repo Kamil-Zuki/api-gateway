@@ -13,6 +13,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "authorization-module.API", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dictionary-parser.API", "..\..\dictionary-parser\dictionary-parser.API.csproj", "{F360A399-B990-491E-AED4-F136D8AAFC59}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "study-module", "..\..\study-module\study-module.csproj", "{CCFB01AD-0DB9-47A8-BCDF-6448D37680CD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{F360A399-B990-491E-AED4-F136D8AAFC59}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F360A399-B990-491E-AED4-F136D8AAFC59}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F360A399-B990-491E-AED4-F136D8AAFC59}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CCFB01AD-0DB9-47A8-BCDF-6448D37680CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCFB01AD-0DB9-47A8-BCDF-6448D37680CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCFB01AD-0DB9-47A8-BCDF-6448D37680CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCFB01AD-0DB9-47A8-BCDF-6448D37680CD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
