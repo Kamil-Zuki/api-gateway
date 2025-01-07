@@ -19,6 +19,26 @@
         "PUT",
         "DELETE"
       ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/games/{everything}",
+      "DownstreamScheme": "http",
+      "SwaggerKey": "study-module",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "study-module",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1/games/{everything}",
+      "RouteIsCaseSensitive": false,
+      "AddQueryStringFromUpstream": true,
+      "UpstreamHttpMethod": [
+        "GET",
+        "POST",
+        "PUT",
+        "DELETE"
+      ]
     }
 
   ]
