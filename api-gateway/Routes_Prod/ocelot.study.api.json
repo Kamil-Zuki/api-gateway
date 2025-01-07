@@ -3,7 +3,7 @@
     {
       "DownstreamPathTemplate": "/api/v1/srs/{everything}",
       "DownstreamScheme": "http",
-      "SwaggerKey": "authorization-module",
+      "SwaggerKey": "study-module",
       "DownstreamHostAndPorts": [
         {
           "Host": "study-module",
