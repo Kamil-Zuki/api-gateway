@@ -49,7 +49,7 @@
       }
     },
     {
-      "DownstreamPathTemplate": "/api/v1/group/{everything}",
+      "DownstreamPathTemplate": "/api/v1/deck-subscription/{everything}",
       "DownstreamScheme": "http",
       "SwaggerKey": "personal-vocab",
       "DownstreamHostAndPorts": [
@@ -58,7 +58,7 @@
           "Port": 80
         }
       ],
-      "UpstreamPathTemplate": "/api/v1/group/{everything}",
+      "UpstreamPathTemplate": "/api/v1/deck-subscription/{everything}",
       "RouteIsCaseSensitive": false,
       "AddQueryStringFromUpstream": true,
       "UpstreamHttpMethod": [
@@ -73,7 +73,7 @@
       }
     },
     {
-      "DownstreamPathTemplate": "/api/v1/group",
+      "DownstreamPathTemplate": "/api/v1/deck-subscription",
       "DownstreamScheme": "http",
       "SwaggerKey": "personal-vocab",
       "DownstreamHostAndPorts": [
@@ -82,7 +82,7 @@
           "Port": 80
         }
       ],
-      "UpstreamPathTemplate": "/api/v1/group",
+      "UpstreamPathTemplate": "/api/v1/deck-subscription",
       "RouteIsCaseSensitive": false,
       "AddQueryStringFromUpstream": true,
       "UpstreamHttpMethod": [
@@ -97,7 +97,7 @@
       }
     },
     {
-      "DownstreamPathTemplate": "/api/v1/term/{everything}",
+      "DownstreamPathTemplate": "/api/v1/card/{everything}",
       "DownstreamScheme": "http",
       "SwaggerKey": "personal-vocab",
       "DownstreamHostAndPorts": [
@@ -106,7 +106,7 @@
           "Port": 80
         }
       ],
-      "UpstreamPathTemplate": "/api/v1/term/{everything}",
+      "UpstreamPathTemplate": "/api/v1/card/{everything}",
       "RouteIsCaseSensitive": false,
       "AddQueryStringFromUpstream": true,
       "UpstreamHttpMethod": [
@@ -121,7 +121,7 @@
       }
     },
     {
-      "DownstreamPathTemplate": "/api/v1/term",
+      "DownstreamPathTemplate": "/api/v1/card",
       "DownstreamScheme": "http",
       "SwaggerKey": "personal-vocab",
       "DownstreamHostAndPorts": [
@@ -130,7 +130,7 @@
           "Port": 80
         }
       ],
-      "UpstreamPathTemplate": "/api/v1/term",
+      "UpstreamPathTemplate": "/api/v1/card",
       "RouteIsCaseSensitive": false,
       "AddQueryStringFromUpstream": true,
       "UpstreamHttpMethod": [
