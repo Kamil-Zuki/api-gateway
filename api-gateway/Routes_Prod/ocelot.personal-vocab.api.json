@@ -343,6 +343,56 @@
         "AuthenticationProviderKey": "Bearer",
         "AllowedScopes": []
       }
+    },
+
+
+    {
+      "DownstreamPathTemplate": "/api/v1/settings/{everything}",
+      "DownstreamScheme": "http",
+      "SwaggerKey": "personal-vocab",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "personal-vocab",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1/settings/{everything}",
+      "RouteIsCaseSensitive": false,
+      "AddQueryStringFromUpstream": true,
+      "UpstreamHttpMethod": [
+        "GET",
+        "POST",
+        "PUT",
+        "DELETE"
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/settings",
+      "DownstreamScheme": "http",
+      "SwaggerKey": "personal-vocab",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "personal-vocab",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1/settings",
+      "RouteIsCaseSensitive": false,
+      "AddQueryStringFromUpstream": true,
+      "UpstreamHttpMethod": [
+        "GET",
+        "POST",
+        "PUT",
+        "DELETE"
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      }
     }
   ]
 }
