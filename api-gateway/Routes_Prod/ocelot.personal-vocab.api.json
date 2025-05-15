@@ -7,7 +7,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "personal-vocab",
-          "Port": 80
+          "Port": 5150
         }
       ],
       "UpstreamPathTemplate": "/api/v1/deck/{everything}",
@@ -31,7 +31,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "personal-vocab",
-          "Port": 80
+          "Port": 5150
         }
       ],
       "UpstreamPathTemplate": "/api/v1/deck",
@@ -56,7 +56,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "personal-vocab",
-          "Port": 80
+          "Port": 5150
         }
       ],
       "UpstreamPathTemplate": "/api/v1/contribution/{everything}",
@@ -80,7 +80,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "personal-vocab",
-          "Port": 80
+          "Port": 5150
         }
       ],
       "UpstreamPathTemplate": "/api/v1/contribution",
@@ -105,7 +105,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "personal-vocab",
-          "Port": 80
+          "Port": 5150
         }
       ],
       "UpstreamPathTemplate": "/api/v1/deck-subscription/{everything}",
@@ -129,7 +129,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "personal-vocab",
-          "Port": 80
+          "Port": 5150
         }
       ],
       "UpstreamPathTemplate": "/api/v1/deck-subscription",
@@ -154,7 +154,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "personal-vocab",
-          "Port": 80
+          "Port": 5150
         }
       ],
       "UpstreamPathTemplate": "/api/v1/card/{everything}",
@@ -179,7 +179,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "personal-vocab",
-          "Port": 80
+          "Port": 5150
         }
       ],
       "UpstreamPathTemplate": "/api/v1/card",
@@ -205,7 +205,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "personal-vocab",
-          "Port": 80
+          "Port": 5150
         }
       ],
       "UpstreamPathTemplate": "/api/v1/deck-version/{everything}",
@@ -229,7 +229,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "personal-vocab",
-          "Port": 80
+          "Port": 5150
         }
       ],
       "UpstreamPathTemplate": "/api/v1/deck-version",
@@ -254,7 +254,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "personal-vocab",
-          "Port": 80
+          "Port": 5150
         }
       ],
       "UpstreamPathTemplate": "/api/v1/search/{everything}",
@@ -278,7 +278,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "personal-vocab",
-          "Port": 80
+          "Port": 5150
         }
       ],
       "UpstreamPathTemplate": "/api/v1/search",
@@ -303,7 +303,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "personal-vocab",
-          "Port": 80
+          "Port": 5150
         }
       ],
       "UpstreamPathTemplate": "/api/v1/study/{everything}",
@@ -327,7 +327,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "personal-vocab",
-          "Port": 80
+          "Port": 5150
         }
       ],
       "UpstreamPathTemplate": "/api/v1/study",
@@ -353,7 +353,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "personal-vocab",
-          "Port": 80
+          "Port": 5150
         }
       ],
       "UpstreamPathTemplate": "/api/v1/settings/{everything}",
@@ -377,7 +377,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "personal-vocab",
-          "Port": 80
+          "Port": 5150
         }
       ],
       "UpstreamPathTemplate": "/api/v1/settings",

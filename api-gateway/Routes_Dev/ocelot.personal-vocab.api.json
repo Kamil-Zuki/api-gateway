@@ -1,27 +1,398 @@
-
 {
   "Routes": [
     {
-      "DownstreamPathTemplate": "/api/v1/{everything}",
+      "DownstreamPathTemplate": "/api/v1/deck/{everything}",
       "DownstreamScheme": "http",
       "SwaggerKey": "personal-vocab",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 5150
+          "Port": 80
         }
       ],
-      "UpstreamPathTemplate": "/api/v1/{everything}",
+      "UpstreamPathTemplate": "/api/v1/deck/{everything}",
       "RouteIsCaseSensitive": false,
       "AddQueryStringFromUpstream": true,
       "UpstreamHttpMethod": [
         "GET",
         "POST",
         "PUT",
-        "Delete"
-      ]
+        "DELETE"
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/deck",
+      "DownstreamScheme": "http",
+      "SwaggerKey": "personal-vocab",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1/deck",
+      "RouteIsCaseSensitive": false,
+      "AddQueryStringFromUpstream": true,
+      "UpstreamHttpMethod": [
+        "GET",
+        "POST",
+        "PUT",
+        "DELETE"
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      }
+    },
+
+    {
+      "DownstreamPathTemplate": "/api/v1/contribution/{everything}",
+      "DownstreamScheme": "http",
+      "SwaggerKey": "personal-vocab",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1/contribution/{everything}",
+      "RouteIsCaseSensitive": false,
+      "AddQueryStringFromUpstream": true,
+      "UpstreamHttpMethod": [
+        "GET",
+        "POST",
+        "PUT",
+        "DELETE"
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/contribution",
+      "DownstreamScheme": "http",
+      "SwaggerKey": "personal-vocab",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1/contribution",
+      "RouteIsCaseSensitive": false,
+      "AddQueryStringFromUpstream": true,
+      "UpstreamHttpMethod": [
+        "GET",
+        "POST",
+        "PUT",
+        "DELETE"
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      }
+    },
+
+    {
+      "DownstreamPathTemplate": "/api/v1/deck-subscription/{everything}",
+      "DownstreamScheme": "http",
+      "SwaggerKey": "personal-vocab",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1/deck-subscription/{everything}",
+      "RouteIsCaseSensitive": false,
+      "AddQueryStringFromUpstream": true,
+      "UpstreamHttpMethod": [
+        "GET",
+        "POST",
+        "PUT",
+        "DELETE"
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/deck-subscription",
+      "DownstreamScheme": "http",
+      "SwaggerKey": "personal-vocab",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1/deck-subscription",
+      "RouteIsCaseSensitive": false,
+      "AddQueryStringFromUpstream": true,
+      "UpstreamHttpMethod": [
+        "GET",
+        "POST",
+        "PUT",
+        "DELETE"
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      }
+    },
+
+    {
+      "DownstreamPathTemplate": "/api/v1/card/{everything}",
+      "DownstreamScheme": "http",
+      "SwaggerKey": "personal-vocab",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1/card/{everything}",
+      "RouteIsCaseSensitive": false,
+      "AddQueryStringFromUpstream": true,
+      "UpstreamHttpMethod": [
+        "GET",
+        "POST",
+        "PUT",
+        "DELETE"
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      }
+    },
+
+    {
+      "DownstreamPathTemplate": "/api/v1/card",
+      "DownstreamScheme": "http",
+      "SwaggerKey": "personal-vocab",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1/card",
+      "RouteIsCaseSensitive": false,
+      "AddQueryStringFromUpstream": true,
+      "UpstreamHttpMethod": [
+        "GET",
+        "POST",
+        "PUT",
+        "DELETE"
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      }
+    },
+
+
+    {
+      "DownstreamPathTemplate": "/api/v1/deck-version/{everything}",
+      "DownstreamScheme": "http",
+      "SwaggerKey": "personal-vocab",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1/deck-version/{everything}",
+      "RouteIsCaseSensitive": false,
+      "AddQueryStringFromUpstream": true,
+      "UpstreamHttpMethod": [
+        "GET",
+        "POST",
+        "PUT",
+        "DELETE"
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/deck-version",
+      "DownstreamScheme": "http",
+      "SwaggerKey": "personal-vocab",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1/deck-version",
+      "RouteIsCaseSensitive": false,
+      "AddQueryStringFromUpstream": true,
+      "UpstreamHttpMethod": [
+        "GET",
+        "POST",
+        "PUT",
+        "DELETE"
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      }
+    },
+
+    {
+      "DownstreamPathTemplate": "/api/v1/search/{everything}",
+      "DownstreamScheme": "http",
+      "SwaggerKey": "personal-vocab",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1/search/{everything}",
+      "RouteIsCaseSensitive": false,
+      "AddQueryStringFromUpstream": true,
+      "UpstreamHttpMethod": [
+        "GET",
+        "POST",
+        "PUT",
+        "DELETE"
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/search",
+      "DownstreamScheme": "http",
+      "SwaggerKey": "personal-vocab",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1/search",
+      "RouteIsCaseSensitive": false,
+      "AddQueryStringFromUpstream": true,
+      "UpstreamHttpMethod": [
+        "GET",
+        "POST",
+        "PUT",
+        "DELETE"
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      }
+    },
+
+    {
+      "DownstreamPathTemplate": "/api/v1/study/{everything}",
+      "DownstreamScheme": "http",
+      "SwaggerKey": "personal-vocab",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1/study/{everything}",
+      "RouteIsCaseSensitive": false,
+      "AddQueryStringFromUpstream": true,
+      "UpstreamHttpMethod": [
+        "GET",
+        "POST",
+        "PUT",
+        "DELETE"
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/study",
+      "DownstreamScheme": "http",
+      "SwaggerKey": "personal-vocab",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1/study",
+      "RouteIsCaseSensitive": false,
+      "AddQueryStringFromUpstream": true,
+      "UpstreamHttpMethod": [
+        "GET",
+        "POST",
+        "PUT",
+        "DELETE"
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      }
+    },
+
+
+    {
+      "DownstreamPathTemplate": "/api/v1/settings/{everything}",
+      "DownstreamScheme": "http",
+      "SwaggerKey": "personal-vocab",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1/settings/{everything}",
+      "RouteIsCaseSensitive": false,
+      "AddQueryStringFromUpstream": true,
+      "UpstreamHttpMethod": [
+        "GET",
+        "POST",
+        "PUT",
+        "DELETE"
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/settings",
+      "DownstreamScheme": "http",
+      "SwaggerKey": "personal-vocab",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1/settings",
+      "RouteIsCaseSensitive": false,
+      "AddQueryStringFromUpstream": true,
+      "UpstreamHttpMethod": [
+        "GET",
+        "POST",
+        "PUT",
+        "DELETE"
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      }
     }
-
-
   ]
 }

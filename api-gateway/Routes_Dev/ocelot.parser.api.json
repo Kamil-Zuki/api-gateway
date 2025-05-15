@@ -2,7 +2,7 @@
 {
   "Routes": [
     {
-      "DownstreamPathTemplate": "/api/v1/cambridge-dictionary",
+      "DownstreamPathTemplate": "/api/v1/cambridge-dictionary{everything}",
       "DownstreamScheme": "http",
       "SwaggerKey": "dictionary-parser",
       "DownstreamHostAndPorts": [
@@ -11,7 +11,7 @@
           "Port": 5208
         }
       ],
-      "UpstreamPathTemplate": "/api/v1/cambridge-dictionary",
+      "UpstreamPathTemplate": "/api/v1/cambridge-dictionary{everything}",
       "RouteIsCaseSensitive": false,
       "AddQueryStringFromUpstream": true,
       "UpstreamHttpMethod": [
