@@ -7,10 +7,6 @@
         "Action": "Start"
       },
       {
-        "Path": "..\\..\\personal-vocab\\personal-vocab.DAL\\personal-vocab.DAL.csproj",
-        "Action": "Start"
-      },
-      {
         "Path": "..\\..\\personal-vocab\\personal-vocab.API\\personal-vocab.API.csproj",
         "Action": "Start"
       },
