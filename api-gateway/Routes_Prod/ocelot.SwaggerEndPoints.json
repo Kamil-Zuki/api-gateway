@@ -1,17 +1,6 @@
 {
   "SwaggerEndPoints": [
     {
-      "Key": "api-gateway",
-      "TransformByOcelotConfig": false,
-      "Config": [
-        {
-          "Name": "Gateway API",
-          "Version": "1.0",
-          "Url": "http://api-gateway:80/swagger/v1/swagger.json"
-        }
-      ]
-    },
-    {
       "Key": "dictionary-parser",
       "TransformByOcelotConfig": true,
       "Config": [
