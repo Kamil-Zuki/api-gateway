@@ -27,12 +27,15 @@ builder.Configuration.SetBasePath(Directory.GetCurrentDirectory())
 
 // Add Ocelot services
 builder.Services.AddOcelot(builder.Configuration).AddPolly();
+
+// Add Swagger generation for gateway
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
+
 builder.Services.AddSwaggerForOcelot(builder.Configuration, opt =>
 {
     opt.GenerateDocsForGatewayItSelf = true;
 });
-
-builder.Services.AddEndpointsApiExplorer();
 
 builder.Services.AddAuthentication(options =>
 {
