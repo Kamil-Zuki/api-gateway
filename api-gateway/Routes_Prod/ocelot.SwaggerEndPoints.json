@@ -2,7 +2,7 @@
   "SwaggerEndPoints": [
     {
       "Key": "api-gateway",
-      "TransformByOcelotConfig": true,
+      "TransformByOcelotConfig": false,
       "Config": [
         {
           "Name": "Gateway API",

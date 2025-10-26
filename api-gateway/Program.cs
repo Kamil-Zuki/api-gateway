@@ -11,35 +11,28 @@ var builder = WebApplication.CreateBuilder(args);
 
 
 var environment = Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT");
-string routes = string.Empty;
-//string? routes = string.Empty;
-//if (environment == "Development")
-//    routes = "Routes_Dev";
-//else
+string routes = environment == "Development" ? "Routes_Dev" : "Routes_Prod";
 
-routes = environment == "Development" ? "Routes_Dev" : "Routes_Prod";
 #if RELEASE
 builder.WebHost.UseUrls("http://*:80");
 #endif
 
-builder.Configuration.AddOcelotWithSwaggerSupport(options =>
-{
-    options.Folder = routes;
-});
-
-
-builder.Services.AddOcelot(builder.Configuration).AddPolly();
-builder.Services.AddSwaggerForOcelot(builder.Configuration);
-
+// Load Ocelot configuration files
 builder.Configuration.SetBasePath(Directory.GetCurrentDirectory())
-    .AddOcelot(routes, builder.Environment)
+    .AddOcelotWithSwaggerSupport(options =>
+    {
+        options.Folder = routes;
+    })
     .AddEnvironmentVariables();
 
-
-builder.Services.AddControllers();
+// Add Ocelot services
+builder.Services.AddOcelot(builder.Configuration).AddPolly();
+builder.Services.AddSwaggerForOcelot(builder.Configuration, opt =>
+{
+    opt.GenerateDocsForGatewayItSelf = true;
+});
 
 builder.Services.AddEndpointsApiExplorer();
-
 
 builder.Services.AddAuthentication(options =>
 {
@@ -73,30 +66,25 @@ builder.Services.AddCors(options =>
                       });
 });
 
-
-
-builder.Services.AddSwaggerGen();
-
 var app = builder.Build();
+
+// Configure middleware pipeline
+app.UseHttpsRedirection();
+app.UseCors("cors");
 
 app.UseAuthentication();
 app.UseAuthorization();
 
+// Swagger middleware
 app.UseSwagger();
-
-app.UseHttpsRedirection();
-
-app.UseCors("cors");
-
 
 app.UseSwaggerForOcelotUI(options =>
 {
     options.PathToSwaggerGenerator = "/swagger/docs";
-
     options.ReConfigureUpstreamSwaggerJson = AlterUpstream.AlterUpstreamSwaggerJson;
-}).UseOcelot().Wait();
+});
 
-
-app.MapControllers();
+// Ocelot middleware (must be last)
+await app.UseOcelot();
 
 app.Run();

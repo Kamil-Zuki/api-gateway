@@ -1,0 +1,31 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "api-gateway.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "..\\..\\personal-vocab\\personal-vocab.DAL\\personal-vocab.DAL.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "..\\..\\personal-vocab\\personal-vocab.API\\personal-vocab.API.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "..\\..\\authorization-module\\authorization-module.API\\authorization-module.API.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "..\\..\\dictionary-parser\\dictionary-parser.API.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "..\\..\\study-module\\study-module.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]
