@@ -1,0 +1,46 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/api/v1/srs/{everything}",
+      "DownstreamScheme": "http",
+      "SwaggerKey": "study-module",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5222
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1/srs/{everything}",
+      "RouteIsCaseSensitive": false,
+      "AddQueryStringFromUpstream": true,
+      "UpstreamHttpMethod": [
+        "GET",
+        "POST",
+        "PUT",
+        "DELETE"
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/games/{everything}",
+      "DownstreamScheme": "http",
+      "SwaggerKey": "study-module",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5222
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1/games/{everything}",
+      "RouteIsCaseSensitive": false,
+      "AddQueryStringFromUpstream": true,
+      "UpstreamHttpMethod": [
+        "GET",
+        "POST",
+        "PUT",
+        "DELETE"
+      ]
+    }
+
+  ]
+}
+

@@ -34,6 +34,17 @@
       ]
     },
     {
+      "Key": "study-module",
+      "TransformByOcelotConfig": true,
+      "Config": [
+        {
+          "Name": "Study API",
+          "Version": "1.0",
+          "Url": "http://localhost:5222/study-module/swagger/v1/swagger.json"
+        }
+      ]
+    },
+    {
       "Key": "personal-vocab",
       "TransformByOcelotConfig": true,
       "Config": [
@@ -44,7 +55,5 @@
         }
       ]
     }
-
-
   ]
 }
