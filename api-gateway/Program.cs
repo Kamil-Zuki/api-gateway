@@ -55,9 +55,15 @@ builder.Services.AddCors(options =>
                       policy =>
                       {
                           policy
-                          .AllowAnyOrigin()
+                          .WithOrigins(
+                              "http://localhost:3000",
+                              "http://localhost:8081",
+                              "http://85.175.218.17:8081",
+                              "https://app.polyraspad.online"
+                          )
                           .AllowAnyMethod()
-                          .AllowAnyHeader();
+                          .AllowAnyHeader()
+                          .AllowCredentials();
                       });
 });
 
