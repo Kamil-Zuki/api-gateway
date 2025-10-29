@@ -70,9 +70,6 @@ app.UseCors("cors");
 app.UseAuthentication();
 app.UseAuthorization();
 
-// Swagger middleware
-app.UseSwagger();
-
 app.UseSwaggerForOcelotUI(options =>
 {
     options.PathToSwaggerGenerator = "/swagger/docs";

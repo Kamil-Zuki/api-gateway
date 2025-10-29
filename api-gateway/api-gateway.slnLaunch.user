@@ -7,15 +7,15 @@
         "Action": "Start"
       },
       {
+        "Path": "..\\..\\dictionary-parser\\dictionary-parser.API.csproj",
+        "Action": "Start"
+      },
+      {
         "Path": "..\\..\\personal-vocab\\personal-vocab.API\\personal-vocab.API.csproj",
         "Action": "Start"
       },
       {
         "Path": "..\\..\\authorization-module\\authorization-module.API\\authorization-module.API.csproj",
-        "Action": "Start"
-      },
-      {
-        "Path": "..\\..\\dictionary-parser\\dictionary-parser.API.csproj",
         "Action": "Start"
       },
       {
